@@ -1,0 +1,65 @@
+ 
+<html>
+    <head>
+      <title>Gesture web app</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script type="text/javascript" src="/86AAF7CD-A199-463A-BEEF-AEE7400B3F0D/main.js?attr=9NCoL5He7OAoTFeCkWo3oXKwJrCN0CZDQNvxH0Dh1qMRyRh9_I27Bq7YIInHuD7ifZlpJFV21PVDVXvcJnV6Fg" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=GHHr4MyiXz_nvaldOMbmBmHuv_7L6NBk02cpL7WfZ1aSkbUuVq9trXyl86b3OJb4Qdw9crW8VHq8pQMk0MdyUA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9iYWxha3Jpc2huYW4xMS5naXRodWIuaW8vUHJvamVjdC0xMTAv"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+        <h3 class="btn btn-info heading">GESTURE WEB APP
+          <br>
+          <span>&#128076;</span>
+          <span>&#128077;</span>
+          <span>&#9996;</span>
+          </h3>
+  
+        <br><br>
+  
+        <p style="font-size: 22px;">Take a selfie of a gesture to know about it's meaning
+          <p>On the following gestures the model is trained - </p>
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam View - </label>
+          <div id="camera"></div>
+          <br><br>
+          <button class="btn btn-primary" onclick="take_snapshot()">Capture Image</button>
+        </div>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <span>&#128076;</span>
+          <span>&#128077;</span>
+          <span>&#9996;</span>
+          
+          <br><br>
+            <label>Prediction - </label>
+          <p class="gesture_name" id="result_gesture_name"></p>
+          <p class="emoji" id="result_emoji"></p> 
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot - </label>
+          <div id="result"></div>
+          <br><br>
+          <button class="btn btn-success" onclick="check()">Predict Gesture</button>
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
